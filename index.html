@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/utilitario.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Login</title>
+</head>
+
+<body>
+
+  <div class="principal">
+    <div class="row justify-content-center align-items-center m-0">
+      <div class="main img col-12">
+        <header class="header">
+          <img src="./img/kisspng-stock-photography-royalty-free-anchor-5af30e4c16b226.174980321525878348093 (1).png" alt="ancora">
+          <h1 class="header menu-ativo">Login</h1>
+        </header>
+
+        <div class="informacoes">
+          <div>
+            <form class="form">
+              <h1>LOGIN</h1>
+              <span class="fechar">X</span>
+              <div class="row m-0">
+                <div class="col-12 p-0">
+                  <label class="login" for="email">E-mail</label>
+                  <input type="text" class="w-90">
+                </div>
+                <div class="col-12 p-0">
+                  <label class="login" for="senha">Senha</label>
+                  <input type="text" class="w-90">
+
+                  <!-- <div class="btn"> -->
+                  <!-- <button>Enviar</button> -->
+                  <!-- <button>Cancelar</button> -->
+                </div>
+
+                <div class="btn_wrapper">
+                  <button class="btn btn-red cancel">Cancelar</button>
+                  <button class="btn btn-green accept">Entrar</button>
+                </div>
+              </div>
+              <!-- Teste -->
+              <div id="background-wrap">
+                <div class="bubble x1"></div>
+                <div class="bubble x2"></div>
+                <div class="bubble x3"></div>
+                <div class="bubble x4"></div>
+                <div class="bubble x5"></div>
+                <div class="bubble x6"></div>
+                <div class="bubble x7"></div>
+                <div class="bubble x8"></div>
+                <div class="bubble x9"></div>
+                <div class="bubble x10"></div>
+              </div>
+          </div>
+          </form>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.header.menu-ativo').click(function () {
+
+        if ($('.informacoes').hasClass('aberto')) {
+
+        } else {
+          $('.informacoes').addClass('aberto');
+        }
+      });
+
+      $('.fechar').click(function () {
+        if ($('.informacoes').hasClass('aberto')) {
+          $('.informacoes').removeClass('aberto');
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
